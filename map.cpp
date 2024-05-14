@@ -1,11 +1,12 @@
 #include<map.h>
+#include <QImage>
 #include<config.h>
+#include "imageprocessor.h"
 Map::Map()
 {
     //加载地图
     m_map1.load(MAP_PATH);
     m_map2.load(MAP_PATH);
-
 
     //初始化X轴
     m_map1_posX = GAME_WIDTH;

@@ -7,8 +7,8 @@ Basketball::Basketball()
     b_basketball.load(BASKETBALL_PATH);
 
     // 初始化篮球的位置
-    b_x = 200;
-    b_y = 100;
+    b_x = 100;
+    b_y = 300;
 
     // 设置篮球初始状态为空闲
     b_Free = true;

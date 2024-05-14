@@ -5,14 +5,14 @@ Zhongfen::Zhongfen()
     //资源的加载
     z_zhongfen.load(ZHONGFEN_PATH);
 
-    //尖叫鸡位置
+    //中分位置
     z_x = 0;
     z_y = 0;
 
-    //尖叫鸡状态
+    //中分状态
     z_Free = true;
 
-    //尖叫鸡速度
+    //中分速度
     z_Speed =ZHONGFEN_SPEED;
 
 }
@@ -20,7 +20,7 @@ Zhongfen::Zhongfen()
 
 void Zhongfen::updatePosition()
 {
-    //空闲尖叫鸡状态 不计算坐标
+    //空闲中分状态 不计算坐标
     if (z_Free)
     {
         return;

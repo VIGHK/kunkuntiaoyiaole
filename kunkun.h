@@ -12,7 +12,7 @@ public:
 
     void setPosition(int x,int y);
 
-
+    QPixmap k_kunkun;
     QPixmap k_kunkun1;
     QPixmap k_kunkun2;
     QPixmap k_kunkun3;

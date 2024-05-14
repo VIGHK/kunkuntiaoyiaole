@@ -12,7 +12,7 @@ public:
 
     // 篮球图片
     QPixmap b_basketball;
-    //":/basketball.jpg"
+    //":/basketball.png"
 
     // 篮球位置
     int b_x;

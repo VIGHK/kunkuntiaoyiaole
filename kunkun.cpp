@@ -4,8 +4,10 @@
 Kunkun::Kunkun()
 {
     //初始化加载坤坤图片
+    k_kunkun.load(KUN_S0);
     k_kunkun1.load(KUN_S1);
     k_kunkun2.load(KUN_S2);
+    k_kunkun3.load(KUN_S3);
 
     //初始化坤坤坐标
     k_x = 150;
