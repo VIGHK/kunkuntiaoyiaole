@@ -439,12 +439,12 @@ void Mainscene::zhongfenToScene()
 
 bool Mainscene::collisiondDetection()
 {
-    QRect dinosaurRect(k_kunkun.k_x, k_kunkun.k_y, k_kunkun.k_kunkun.width(),k_kunkun.k_kunkun.height());
+    QRect jianjiaokunRect(k_kunkun.k_x, k_kunkun.k_y, k_kunkun.k_kunkun.width(),k_kunkun.k_kunkun.height());
     for (int i = 0; i < JIANJIAOKUN_NUM; i++)
     {
         if (j_jianjiaokuns[i].j_Free == false){
-        QRect enermyRect(j_jianjiaokuns[i].j_x, j_jianjiaokuns[i].j_y, j_jianjiaokuns[i].j_jianjiaokun1.width(),j_jianjiaokuns[i].j_jianjiaokun1.height());
-        if (dinosaurRect.intersects(enermyRect))
+        QRect j_Rect(j_jianjiaokuns[i].j_x, j_jianjiaokuns[i].j_y, j_jianjiaokuns[i].j_jianjiaokun1.width(),j_jianjiaokuns[i].j_jianjiaokun1.height());
+        if (jianjiaokunRect.intersects(j_Rect))
         {
            j_jianjiaokuns[i].j_Free = true;
             return true; // 碰撞检测成功
@@ -457,11 +457,11 @@ bool Mainscene::collisiondDetection()
 
 bool Mainscene::checkbasketballCollision()
 {
-    QRect dinosaurRect(k_kunkun.k_x, k_kunkun.k_y, k_kunkun.k_kunkun.width(), k_kunkun.k_kunkun.height());
+    QRect j_Rect(k_kunkun.k_x, k_kunkun.k_y, k_kunkun.k_kunkun.width(), k_kunkun.k_kunkun.height());
 
         if (b_basketball.b_Free == false){
-        QRect enermyRect(b_basketball.b_x, b_basketball.b_y,b_basketball.b_basketball.width(), b_basketball.b_basketball.height());
-        if (dinosaurRect.intersects(enermyRect))
+        QRect b_ect(b_basketball.b_x, b_basketball.b_y,b_basketball.b_basketball.width(), b_basketball.b_basketball.height());
+        if (b_Rect.intersects(b_Rect))
         {
             b_basketball.b_Free = true;
             return true; // 碰撞检测成功
