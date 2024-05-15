@@ -14,13 +14,9 @@ Kunkun::Kunkun()
     k_y = 200;
 
     //初始化边框
-    //    d_rect.setWidth(d_dinosaur1.width()-75);
     k_rect.setWidth(5);
-    k_rect.setHeight(10);        //d_dinosaur1.height()-45);
-    k_rect.moveTo(k_x,k_y);
 
 }
-
 
 void Kunkun::setPosition(int x, int y)
 {
